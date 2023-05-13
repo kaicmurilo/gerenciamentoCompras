@@ -4,28 +4,32 @@ Este é um sistema de gerenciamento de compras, onde é possível registrar e li
 Instalação
 Clone o repositório do GitHub:
 
-bash
+```bash
 Copy code
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 Instale as dependências do projeto:
+```
 
-bash
+```bash
 Copy code
 npm install
 Crie um arquivo .env na raiz do projeto e defina as variáveis de ambiente necessárias:
+```
 
-bash
+```bash
 Copy code
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/meu-banco-de-dados
 Inicie o servidor:
+```
 
-bash
+```bash
 Copy code
 npm start
 Uso
 Registrar uma compra
 Método HTTP: POST
+```
 
 Endpoint: /compras/criarCompra
 
