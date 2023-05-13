@@ -3,10 +3,11 @@
 Este é um sistema de gerenciamento de compras, onde é possível registrar e listar compras.
 
 ## Instalação
+
 Clone o repositório do GitHub:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/kaicmurilo/gerenciamentoCompras
 ```
 
 Instale as dependências do projeto:
@@ -31,9 +32,10 @@ npm start
 ## Uso
 
 ## Registrar uma compra
+
 Método HTTP: POST
 
-Endpoint: /compras/criarCompra
+Endpoint: **/compras/criarCompra**
 
 Parâmetros:
 
@@ -66,13 +68,14 @@ json
 ```
 
 ## Listar compras
+
 Método HTTP: GET
 
-Endpoint: /compras/listarCompras
+Endpoint: **/compras/**
 
 Parâmetros: nenhum
 
-Exemplo de requisição: GET /compras/listarCompras
+Exemplo de requisição: GET **/compras/**
 
 Exemplo de resposta (lista vazia):
 
@@ -80,7 +83,7 @@ json
 
 ```bash
 {
-"message": "Não há compras registradas."
+[]
 }
 ```
 
