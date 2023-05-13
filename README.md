@@ -1,5 +1,4 @@
 Sistema de Gerenciamento de Compras
-Descrição
 Este é um sistema de gerenciamento de compras, onde é possível registrar e listar compras.
 
 Instalação
