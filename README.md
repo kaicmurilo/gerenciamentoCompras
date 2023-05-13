@@ -40,9 +40,10 @@ Endpoint: **/compras/criarCompra**
 Parâmetros:
 
 tipo (obrigatório): o tipo da compra (crédito ou débito)
-valor (obrigatório): o valor da compra
-data (opcional): a data da compra (padrão: data atual)
 
+valor (obrigatório): o valor da compra
+
+data (preenchimento default): a data da compra (padrão: data atual)
 
 
 Exemplo de requisição json:
