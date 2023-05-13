@@ -89,9 +89,10 @@ json
 
 Exemplo de resposta (lista com uma compra):
 
-json
+
 
 ```bash
+//json
 {
 "compras": [
 {
