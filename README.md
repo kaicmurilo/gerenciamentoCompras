@@ -42,9 +42,7 @@ Parâmetros:
 tipo (obrigatório): o tipo da compra (crédito ou débito)
 valor (obrigatório): o valor da compra
 data (opcional): a data da compra (padrão: data atual)
-Exemplo de requisição:
-
-json
+Exemplo de requisição json:
 
 ```bash
 {
@@ -53,9 +51,7 @@ json
 }
 ```
 
-Exemplo de resposta:
-
-json
+Exemplo de resposta json:
 
 ```bash
 {
@@ -77,9 +73,7 @@ Parâmetros: nenhum
 
 Exemplo de requisição: GET **/compras/**
 
-Exemplo de resposta (lista vazia):
-
-json
+Exemplo de resposta json (lista vazia):
 
 ```bash
 {
@@ -87,12 +81,9 @@ json
 }
 ```
 
-Exemplo de resposta (lista com uma compra):
-
-
+Exemplo de resposta json (lista com uma compra):
 
 ```bash
-//json
 {
 "compras": [
 {
