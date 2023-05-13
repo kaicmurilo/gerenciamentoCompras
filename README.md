@@ -1,8 +1,8 @@
-## Sistema de Gerenciamento de Compras
+# Sistema de Gerenciamento de Compras
 
 Este é um sistema de gerenciamento de compras, onde é possível registrar e listar compras.
 
-Instalação
+## Instalação
 Clone o repositório do GitHub:
 
 ```bash
@@ -30,7 +30,7 @@ npm start
 
 ## Uso
 
-Registrar uma compra
+## Registrar uma compra
 Método HTTP: POST
 
 Endpoint: /compras/criarCompra
@@ -65,7 +65,7 @@ json
 }
 ```
 
-Listar compras
+## Listar compras
 Método HTTP: GET
 
 Endpoint: /compras/listarCompras
