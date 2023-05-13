@@ -42,6 +42,9 @@ Parâmetros:
 tipo (obrigatório): o tipo da compra (crédito ou débito)
 valor (obrigatório): o valor da compra
 data (opcional): a data da compra (padrão: data atual)
+
+
+
 Exemplo de requisição json:
 
 ```bash
