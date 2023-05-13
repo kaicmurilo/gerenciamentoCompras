@@ -2,6 +2,21 @@
 
 Este é um sistema de gerenciamento de compras, onde é possível registrar e listar compras.
 
+
+## Tecnologias Usadas
+
+* Node.js
+* MongoDB
+
+
+## Dependências
+
+* Express
+* Mongoose
+* Jest
+* Dotenv
+
+
 ## Instalação
 
 Clone o repositório do GitHub:
