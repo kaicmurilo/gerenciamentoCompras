@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Compras
 
-Este é um sistema de gerenciamento de compras, onde é possível registrar e listar compras.
+Este é um (BackEnd) sistema de gerenciamento de compras, onde é possível registrar e listar compras.
 
 ## Tecnologias Usadas
 
