@@ -190,3 +190,8 @@ Exemplo de resposta json (lista de compras pesquisando na data 2023-05-14):
     "saldoConsolidado": 400
 }
 ```
+
+
+## Desenho Solução 
+
+![Desenho ER](https://raw.githubusercontent.com/kaicmurilo/gerenciamentoCompras/main/imagens/desenhoDoc.png)
