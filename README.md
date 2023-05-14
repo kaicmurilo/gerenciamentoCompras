@@ -42,6 +42,20 @@ Inicie o servidor:
 npm start
 ```
 
+## Teste
+
+Instale as dependências do projeto:
+
+```bash
+npm install --save--dev jest
+```
+
+Inicie os testes:
+
+```bash
+npm test
+```
+
 ## Uso
 
 ## Registrar uma compra
