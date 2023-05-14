@@ -194,4 +194,4 @@ Exemplo de resposta json (lista de compras pesquisando na data 2023-05-14):
 
 ## Desenho Solução 
 
-![Desenho ER](https://raw.githubusercontent.com/kaicmurilo/gerenciamentoCompras/main/imagens/desenhoDoc.png)
+![Desenho ER](https://raw.githubusercontent.com/kaicmurilo/gerenciamentoCompras/main/desenhoDoc.png)
