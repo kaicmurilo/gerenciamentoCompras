@@ -2,20 +2,18 @@
 
 Este é um sistema de gerenciamento de compras, onde é possível registrar e listar compras.
 
-
 ## Tecnologias Usadas
 
-* Node.js
-* MongoDB
-
+- Node.js
+- MongoDB
 
 ## Dependências
 
-* Express
-* Mongoose
-* Jest
-* Dotenv
-
+- Express
+- Mongoose
+- Jest
+- Dotenv
+- Moment
 
 ## Instalação
 
@@ -59,7 +57,6 @@ tipo (obrigatório): o tipo da compra (crédito ou débito)
 valor (obrigatório): o valor da compra
 
 data (preenchimento default): a data da compra (padrão: data atual)
-
 
 Exemplo de requisição json:
 
@@ -112,6 +109,55 @@ Exemplo de resposta json (lista com uma compra):
 "data": "2021-10-07T18:46:47.741Z",
 "__v": 0
 }
+]
+}
+```
+
+## Solicitar Relatório
+
+Método HTTP: GET
+
+Endpoint: **/compras/relatorio**
+
+Parâmetros:
+
+data (preenchimento default): ano-mês-dia
+
+Exemplo de requisição json:
+
+```bash
+{
+"data": "2023-05-14"
+}
+```
+
+Exemplo de resposta json (lista vazia):
+
+```bash
+{
+[]
+}
+```
+
+Exemplo de resposta json (lista com uma compra):
+
+```bash
+{
+[
+    {
+        "_id": "646132bfad2757637fb8da58",
+        "tipo": "credito",
+        "valor": 100,
+        "data": "2023-05-14T04:00:00.000Z",
+        "__v": 0
+    },
+    {
+        "_id": "646132ccad2757637fb8da5a",
+        "tipo": "credito",
+        "valor": 100,
+        "data": "2023-05-14T04:00:00.000Z",
+        "__v": 0
+    }
 ]
 }
 ```

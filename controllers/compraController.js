@@ -1,5 +1,5 @@
 const Compra = require("../models/compra");
-
+const moment = require("moment");
 exports.criarCompra = async (req, res) => {
   const { tipo, valor, data } = req.body;
 
@@ -22,6 +22,20 @@ exports.getCompras = async (req, res) => {
   try {
     const compras = await Compra.find();
     return res.status(200).json(compras);
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: "Erro interno do servidor." });
+  }
+};
+
+exports.getRelatorio = async (req, res) => {
+  const { data } = req.body;
+  const start = moment(data).startOf("day");
+  const end = moment(data).endOf("day");
+
+  try {
+    const relatorio = await Compra.find({ data: { $gte: start, $lte: end } });
+    return res.status(200).json(relatorio);
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Erro interno do servidor." });
