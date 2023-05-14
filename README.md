@@ -153,25 +153,40 @@ Exemplo de resposta json (lista vazia):
 }
 ```
 
-Exemplo de resposta json (lista com duas compras pesquisando na data 2023-05-14):
+Exemplo de resposta json (lista de compras pesquisando na data 2023-05-14):
 
 ```bash
 {
-[
-    {
-        "_id": "646132bfad2757637fb8da58",
-        "tipo": "credito",
-        "valor": 100,
-        "data": "2023-05-14T04:00:00.000Z",
-        "__v": 0
-    },
-    {
-        "_id": "646132ccad2757637fb8da5a",
-        "tipo": "credito",
-        "valor": 100,
-        "data": "2023-05-14T04:00:00.000Z",
-        "__v": 0
-    }
-]
+    "compras": [
+        {
+            "_id": "64613ce2aaef651550da44e8",
+            "tipo": "credito",
+            "valor": 100,
+            "data": "2023-05-14T04:00:00.000Z",
+            "__v": 0
+        },
+        {
+            "_id": "64613ce3aaef651550da44ea",
+            "tipo": "credito",
+            "valor": 100,
+            "data": "2023-05-14T04:00:00.000Z",
+            "__v": 0
+        },
+        {
+            "_id": "64613ce4aaef651550da44ec",
+            "tipo": "credito",
+            "valor": 100,
+            "data": "2023-05-14T04:00:00.000Z",
+            "__v": 0
+        },
+        {
+            "_id": "64613e1453e94fb98cd18b52",
+            "tipo": "debito",
+            "valor": 100,
+            "data": "2023-05-14T04:00:00.000Z",
+            "__v": 0
+        }
+    ],
+    "saldoConsolidado": 400
 }
 ```

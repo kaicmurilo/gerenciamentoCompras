@@ -34,8 +34,13 @@ exports.getRelatorio = async (req, res) => {
   const end = moment(data).endOf("day");
 
   try {
-    const relatorio = await Compra.find({ data: { $gte: start, $lte: end } });
-    return res.status(200).json(relatorio);
+    const compras = await Compra.find({ data: { $gte: start, $lte: end } });
+    const saldoConsolidado = compras.reduce(
+      (total, compra) => total + compra.valor,
+      0
+    );
+
+    return res.status(200).json({ compras, saldoConsolidado });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Erro interno do servidor." });

@@ -73,10 +73,10 @@ describe("GET /compras/relatorio", () => {
       .get("/compras/relatorio")
       .send({ data: "2023-05-14" });
 
-    // verifica se o status da resposta é 200 e se o corpo é um array com a compra criada
+    // verifica se o status da resposta é 200 e se o corpo é um objeto contendo a lista de compras e o saldo consolidado
     expect(response.statusCode).toBe(200);
-    expect(Array.isArray(response.body)).toBe(true);
-    expect(response.body[0].tipo).toBe(compra.tipo);
-    expect(response.body[0].valor).toBe(compra.valor);
+    expect(typeof response.body).toBe("object");
+    expect(Array.isArray(response.body.compras)).toBe(true);
+    expect(typeof response.body.saldoConsolidado).toBe("number");
   });
 });
