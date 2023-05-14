@@ -139,7 +139,7 @@ Exemplo de resposta json (lista vazia):
 }
 ```
 
-Exemplo de resposta json (lista com uma compra):
+Exemplo de resposta json (lista com duas compras pesquisando na data 2023-05-14):
 
 ```bash
 {
