@@ -44,7 +44,7 @@ npm start
 
 ## Teste
 
-Instale as dependências do projeto:
+Instale as dependências de desenvolvimento para testes:
 
 ```bash
 npm install --save--dev jest
